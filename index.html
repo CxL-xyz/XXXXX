@@ -5,25 +5,8 @@
 		<title>A Web</title>
 	</head>
 	<body>
-		<script>
-			function func(name1) {
-				if (name1 == "你的名字") {
-					alert("不要玩梗啊啊啊！");
-					name1 = prompt("请输入你的名字", "");
-					func(name1)
-				} else if (name1 == "陈炎汐") {
-					alert("可以进入");
-					flag = true;
-					window.location = "https://github.com/CxL-xyz/CxL-xyz/blob/main/GoodThing.html";
-				} else {
-					alert("您没有权限");
-					window.location = "https://github.com/CxL-xyz/CxL-xyz/blob/main/Nothing.html";
-				}
-			}
-
-			let name = prompt("请输入你的名字", "");
-			let flag = false;
-			func(name);
-		</script>
+		<label for = "name">请输入你的名字</label>
+		<input type = "text" id = "name" required/>
+		<input type = "buttom" value = "提交"/>
 	</body>
 </html>
