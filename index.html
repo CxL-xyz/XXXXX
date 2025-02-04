@@ -5,8 +5,18 @@
 		<title>A Web</title>
 	</head>
 	<body>
-		<label for = "name">请输入你的名字</label>
-		<input type = "text" id = "name" required/>
-		<input type = "buttom" value = "提交"/>
+		<div style = "text-align:center">
+			<form>
+				<label for = "name"> Please input your name. </label>
+				<input type = "text" id = "name" required/>
+				<input type = "submit" onclick="func()" />
+				<script>
+					function func() {
+						alert(document.getElementById("name").value);
+					}		
+				</script>
+			</form>
+		</div>
+		
 	</body>
 </html>
