@@ -11,9 +11,13 @@
 				<input type = "text" id = "name" required/>
 				<input type = "submit" onclick="func()" />
 				<script>
+					let name;
 					function func() {
-						alert(document.getElementById("name").value);
-					}		
+						name = document.getElementById("name").value;
+					}
+					if (name == "陈炎汐") {
+						window.open();
+					}
 				</script>
 			</form>
 		</div>
