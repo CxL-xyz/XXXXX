@@ -6,20 +6,22 @@
 	</head>
 	<body>
 		<div style = "text-align:center">
-			<form>
+<!-- 			<form>
 				<label for = "name"> Please input your name.<br> </label>
 				<input type = "text" id = "name" required/>
-				<input type = "submit" onclick="func()" />
+				<input type = "submit" onclick="func()" /> -->
 				<script>
-					let name;
-					function func() {
-						name = document.getElementById("name").value;
-					}
+					// function func() {
+					// 	name = document.getElementById("name").value;
+					// }
+					let name = prompt("", "Please input your name.");
 					if (name == "陈炎汐") {
 						document.write(`<img src = "https://github.com/CxL-xyz/CxL-xyz/blob/main/Image/1.jpg" alt="one"/>`);
+					} else {
+						document.write(`您没有权限<br>`);
 					}
 				</script>
-			</form>
+<!-- 			</form> -->
 		</div>
 		
 	</body>
