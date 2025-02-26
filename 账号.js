@@ -30,6 +30,7 @@ function func() {
 	password = document.getElementById("pw").value;
 	if (check(name, password)) {
 		alert("登录成功");
+		window.location.href = "GoodThing.html";
 	} else {
 		alert("用户名或密码错误");
 	}
